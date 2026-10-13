@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Creainspo — Everyday Things, Made Uniquely Yours</title>
+<meta name="description" content="Creainspo personalizes everyday products with custom artwork and unique designs.">
+<!-- Fonts are optional; the site falls back to system fonts if offline. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,800;1,9..144,600&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#home">Skip to content</a>
+<div class="cursor" aria-hidden="true"></div>
+
+<!-- ============ NAVBAR ============ -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#home" class="logo" data-nav>Creainspo</a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+    <nav id="menu" class="menu" aria-label="Main">
+      <a href="#home" data-nav>Home</a>
+      <a href="#about" data-nav>About</a>
+      <a href="#products" data-nav>Products</a>
+      <a href="#contact" data-nav>Contact &amp; Feedback</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <div class="hero__bg" aria-hidden="true">
+    <div class="blob b1" data-depth="30"></div>
+    <div class="blob b2" data-depth="-20"></div>
+    <div class="blob b3" data-depth="14"></div>
+    <svg class="deco ring" data-depth="-12" viewBox="0 0 100 100"><circle cx="50" cy="50" r="44" fill="none" stroke="#2B2730" stroke-width="1.5" stroke-dasharray="3 7"/></svg>
+    <svg class="deco star s1" data-depth="26" viewBox="0 0 24 24"><path d="M12 1l2.5 8.5L23 12l-8.5 2.5L12 23l-2.5-8.5L1 12l8.5-2.5z" fill="#F4A9C4"/></svg>
+    <svg class="deco star s2" data-depth="-18" viewBox="0 0 24 24"><path d="M12 1l2.5 8.5L23 12l-8.5 2.5L12 23l-2.5-8.5L1 12l8.5-2.5z" fill="#8FA9D6"/></svg>
+    <svg class="deco star s3" data-depth="18" viewBox="0 0 24 24"><path d="M12 1l2.5 8.5L23 12l-8.5 2.5L12 23l-2.5-8.5L1 12l8.5-2.5z" fill="#B7A5EA"/></svg>
+    <svg class="deco heart" data-depth="22" viewBox="0 0 24 24"><path d="M12 21s-8-5.3-8-11a4.5 4.5 0 018-2.8A4.5 4.5 0 0120 10c0 5.7-8 11-8 11z" fill="#F4A9C4"/></svg>
+    <svg class="deco flower" data-depth="-24" viewBox="0 0 40 40"><g fill="#CDBFEF"><circle cx="20" cy="9" r="7"/><circle cx="31" cy="20" r="7"/><circle cx="20" cy="31" r="7"/><circle cx="9" cy="20" r="7"/></g><circle cx="20" cy="20" r="5" fill="#FBF4E9"/></svg>
+    <svg class="deco wave" data-depth="10" viewBox="0 0 300 40"><path d="M0 20 Q 25 0 50 20 T 100 20 T 150 20 T 200 20 T 250 20 T 300 20" fill="none" stroke="#2B2730" stroke-width="2.5" stroke-linecap="round"/></svg>
+    <span class="tag t1" data-depth="16">Made with creativity</span>
+    <span class="tag t2" data-depth="-14">Designed just for you</span>
+    <span class="tag t3" data-depth="12">Your idea, your style</span>
+  </div>
+  <div class="hero__content">
+    <h1>Everyday Things, <em>Made Uniquely Yours.</em></h1>
+    <p>Personalized accessories, custom artwork, and little details that make ordinary things feel special.</p>
+    <div class="btns">
+      <a href="#products" class="btn btn--dark" data-nav>Explore Products</a>
+      <a href="#contact" class="btn btn--ghost" data-nav>Let's Create Something</a>
+    </div>
+    <!-- ADD YOUR OWN HERO IMAGE HERE: Replace this comment with an img element and your image URL when ready.
+         Example: <img src="hero.jpg" alt="Describe your image" class="hero__img">
+         Then add this to style.css: .hero__img{max-width:100%;border-radius:28px;object-fit:cover;margin-top:2rem} -->
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section about" id="about">
+  <div class="wrap about__grid">
+    <div class="reveal">
+      <h2>A Little Creativity Goes a Long Way.</h2>
+      <p>Creainspo is all about bringing creativity into everyday life. From personalized accessories to custom artwork, each creation is an opportunity to express your personality, celebrate an idea, or give someone a meaningful gift.</p>
+      <!-- ADD YOUR OWN BUSINESS STORY, STUDIO PHOTO, OR ARTWORK HERE: add a paragraph or an img element below. -->
+    </div>
+    <!-- Interactive doodle: click the palette dots to recolor the object -->
+    <div class="doodle reveal" aria-label="Interactive doodle: choose a color for the tote">
+      <svg viewBox="0 0 200 200" role="img" aria-label="Illustration of a tote bag being personalized">
+        <path d="M70 80 Q70 30 100 30 Q130 30 130 80" fill="none" stroke="#2B2730" stroke-width="5" stroke-linecap="round"/>
+        <rect id="doodleBag" x="45" y="75" width="110" height="105" rx="12" fill="#CDBFEF" stroke="#2B2730" stroke-width="5" style="transition:fill .4s"/>
+        <path d="M100 105l5 12 12 5-12 5-5 12-5-12-12-5 12-5z" fill="#FBF4E9" stroke="#2B2730" stroke-width="3" stroke-linejoin="round" class="spin-star"/>
+      </svg>
+      <div class="dots" role="group" aria-label="Tote color">
+        <button type="button" data-c="#CDBFEF" aria-label="Lavender" style="background:#CDBFEF" aria-pressed="true"></button>
+        <button type="button" data-c="#F6C1D3" aria-label="Pink" style="background:#F6C1D3" aria-pressed="false"></button>
+        <button type="button" data-c="#9FB6DE" aria-label="Blue" style="background:#9FB6DE" aria-pressed="false"></button>
+      </div>
+    </div>
+  </div>
+  <div class="wrap cards3">
+    <article class="feature reveal"><h3>Made Personal</h3><p>Products customized around your ideas and preferences.</p></article>
+    <article class="feature reveal"><h3>Creativity First</h3><p>Artistic details and designs that make each creation special.</p></article>
+    <article class="feature reveal"><h3>Made for You</h3><p>A collaborative process where your ideas help shape the final design.</p></article>
+  </div>
+</section>
+
+<!-- ============ PRODUCTS ============ -->
+<section class="section products" id="products">
+  <div class="wrap">
+    <div class="reveal head">
+      <h2>Find Your Kind of Creative.</h2>
+      <p>Choose a product, explore a design direction, and let's bring your idea to life.</p>
+    </div>
+    <!-- Cards are generated by script.js from the PRODUCTS array. -->
+    <!-- HOW TO ADD YOUR IMAGES: in script.js, set image: "tote-bag.jpg" (etc.) on a product.
+         The placeholder art is replaced by your photo automatically. Put images in the same folder as index.html. -->
+    <div class="grid" id="productGrid"></div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section contact" id="contact">
+  <div class="wrap">
+    <div class="reveal head">
+      <h2>Have an Idea? Let's Make It Happen.</h2>
+      <p>Found something you love or have a design in mind? Reach out directly to discuss your order, customization options, and pricing.</p>
+      <p class="muted">Email: <a id="emailText" href="mailto:YOUR_EMAIL@example.com">YOUR_EMAIL@example.com</a> &nbsp;|&nbsp; Phone: <a id="phoneText" href="tel:YOUR_PHONE_NUMBER">YOUR_PHONE_NUMBER</a></p>
+      <div class="btns">
+        <a href="#feedbackForm" class="btn btn--dark" id="customOrderBtn">Request a Custom Order</a>
+        <a href="tel:YOUR_PHONE_NUMBER" class="btn btn--ghost" id="callBtn">Call Us</a>
+        <a href="mailto:YOUR_EMAIL@example.com" class="btn btn--ghost" id="mailBtn">Send an Email</a>
+      </div>
+    </div>
+
+    <div class="formbox reveal">
+      <h3>We'd Love to Hear From You.</h3>
+      <p class="muted">Send feedback, reviews, questions, concerns, or customization inquiries. Submitting opens a prepared email in your email app — you need to send it from there. Nothing is sent or saved by this website.</p>
+      <form id="feedbackForm" novalidate>
+        <div class="row">
+          <div class="field"><label for="fName">Name *</label><input id="fName" name="name" maxlength="60" autocomplete="name" required aria-describedby="eName"><span class="err" id="eName" role="alert"></span></div>
+          <div class="field"><label for="fEmail">Email address *</label><input id="fEmail" name="email" type="email" maxlength="100" autocomplete="email" required aria-describedby="eEmail"><span class="err" id="eEmail" role="alert"></span></div>
+        </div>
+        <div class="row">
+          <div class="field"><label for="fType">Feedback type *</label>
+            <select id="fType" name="type" required>
+              <option>Feedback</option><option>Review</option><option>Question</option><option>Concern</option><option>Custom Order</option>
+            </select></div>
+          <div class="field"><label for="fProduct">Related product (optional)</label><select id="fProduct" name="product"><option value="">None</option></select></div>
+        </div>
+        <div class="field"><label for="fMsg">Message *</label>
+          <textarea id="fMsg" name="message" rows="6" maxlength="1000" required aria-describedby="eMsg count"></textarea>
+          <div class="msgmeta"><span class="err" id="eMsg" role="alert"></span><span id="count" class="count">0 / 1000</span></div></div>
+        <div class="btns">
+          <button type="submit" class="btn btn--dark">Prepare Email Draft</button>
+          <button type="button" class="btn btn--ghost" id="resetBtn">Clear Form</button>
+        </div>
+        <p id="status" class="status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap footer__grid">
+    <div><strong class="logo">Creainspo</strong><p>Turning ordinary objects into little pieces of art.</p></div>
+    <nav aria-label="Footer"><a href="#home" data-nav>Home</a><a href="#about" data-nav>About</a><a href="#products" data-nav>Products</a><a href="#contact" data-nav>Contact &amp; Feedback</a></nav>
+    <div><a class="fmail" href="mailto:YOUR_EMAIL@example.com">YOUR_EMAIL@example.com</a><br><a class="fphone" href="tel:YOUR_PHONE_NUMBER">YOUR_PHONE_NUMBER</a>
+      <!-- OPTIONAL SOCIAL LINKS: add your real links here, e.g. <br><a href="https://instagram.com/yourname">Instagram</a> -->
+    </div>
+  </div>
+  <p class="copy">&copy; <span id="year"></span> Creainspo. All rights reserved.</p>
+</footer>
+
+<!-- ============ PRODUCT PANEL (modal) ============ -->
+<div class="modal" id="modal" hidden>
+  <div class="modal__bg" data-close></div>
+  <div class="modal__box" role="dialog" aria-modal="true" aria-labelledby="mTitle" tabindex="-1">
+    <button class="modal__x" data-close aria-label="Close panel">&times;</button>
+    <h3 id="mTitle"></h3>
+    <p id="mDesc" class="muted"></p>
+    <p id="mNote" class="note" hidden></p>
+    <div class="cats" id="mCats" role="group" aria-label="Design categories"></div>
+    <p id="mSel" class="sel" role="status" aria-live="polite">Pick a design category to continue.</p>
+    <div class="btns">
+      <button class="btn btn--dark" id="mContact" disabled>Contact About This Design</button>
+      <button class="btn btn--ghost" data-close>Back to All Products</button>
+    </div>
+  </div>
+</div>
+
+<button class="totop" id="toTop" aria-label="Back to top">&uarr;</button>
+<script src="script.js"></script>
+</body>
+</html>
